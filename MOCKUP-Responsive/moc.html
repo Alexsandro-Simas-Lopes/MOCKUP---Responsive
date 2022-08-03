@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- BOOTSTRAP LINK (CSS - JS) 5.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- MATERIAL ICONS CND -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+    
+    <!-- BARRA DE INÍCIO - BOTÃO A ESQUERDA + FLEXBOX -->
+    <ul class="nav justify-content-start" 
+      style="background-color:rgb(13, 202, 240); height: 0px;"> 
+      <div>
+        <button class="navbar bg-info fixed-right btn 
+          btn-secondary button_offcancas
+          navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </ul>
+
+    <!-- ===== BOTÃO OFFCANVAS - (SANDUICHE) ===== -->      
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static"
+      tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+      <div class="offcanvas-header">
+        <h4 class="offcanvas-title" id="staticBackdropLabel">LINKS</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" 
+          aria-label="Close">
+        </button>
+      </div>
+
+      <!-- OFFCANVAS - BOTÃO + FLEXBOX -->
+      <div class="p-4 m-0 bd-example">
+        <div class="dropdown-menu">
+          <div class="bg-secondary">
+            <form class="container-fluid text-light-left"
+              style="flex-direction: column;">
+              <div class="display-flex">
+                <button class="btn btn-sm bt-border dropdown-item" 
+                  data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) início é o que vem em primeiro lugar (num processo); princípio, começo." type="button">
+                  <span class="material-icons-sharp wids">widgets</span>HOME 
+                </button>
+                <button class="btn btn-sm bt-border dropdown-item" 
+                  data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) Corporação é a associação ou organismo social que reúne os membros de uma mesma profissão." type="button">
+                  <span class="material-icons-sharp wids">widgets</span>CORPORATE
+                </button>
+                <button class="btn btn-sm bt-border dropdown-item" 
+                  data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) K + R = KR ('-')z" type="button">
+                  <span class="material-icons-sharp wids">widgets</span>KR
+                </button>
+                <button class="btn btn-sm bt-border dropdown-item" 
+                  data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) O Departamento é responsável pela coordenação de cada um dos cursos de formação profissional na universidade." type="button">
+                  <span class="material-icons-sharp wids">widgets</span>DEPARTAMENTS
+                </button>
+                <button class="btn btn-sm bt-border dropdown-item" 
+                  data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) Tooltip on top" type="button">
+                  <span class="material-icons-sharp wids">widgets</span>SUBSCINTES
+                </button>
+                <button class="btn btn-sm bt-border dropdown-item" 
+                  data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) Tooltip on top" type="button">
+                  <span class="material-icons-sharp wids">widgets</span>K.V
+                </button>
+                <button class="btn btn-sm bt-border dropdown-item" 
+                  data-bs-toggle="tooltip" data-bs-placement="top" title=" (BOTÃO) Comunicar é a ação de transmitir uma mensagem e, eventualmente, receber outra mensagem como resposta." type="button">
+                  <span class="material-icons-sharp wids">widgets</span>COMMUNITY 
+                </button>
+              </div>
+            </form>
+          </div> 
+        </div>
+      </div>
+
+      <!-- CLICK-LINKS + FLEXBOX-->      
+      <div class="offcanvas-body">
+        <div class="staticBackdropLabel">
+          <form class="container-fluid navbar">
+            <div style="float:left;">
+              <button class="btn btn-sm-1 btn-outline-info bg-light 
+                outer-circle" style="border: none;" data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) Modelo de objetos" type="button">
+                <span class="material-icons-sharp">inventory_2</span>
+              </button> <h5 class="text-dark">Template</h5>
+            </div>
+            <div style="float:left;">                 
+              <button class="btn btn-sm-1 btn-outline-info bg-light 
+                outer-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) Forum de conversas" type="button">
+                <span class="material-icons-sharp">forum</span>
+              </button> <h5 class="text-dark">Question</h5>
+            </div>
+            <div style="float:left;">                 
+              <button class="btn btn-sm-1 btn-outline-info bg-light 
+                outer-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) Meus favoritos" type="button">
+                <span class="material-icons-sharp">person_add_alt_1</span>
+              </button> <h5 class="text-dark">Favorite</h5>
+            </div>
+            <div style="float:left;">                 
+                <button class="btn btn-sm-1 btn-outline-info bg-light 
+                  outer-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) Pastas" type="button">
+                  <span class="material-icons-sharp">content_paste</span>
+                </button> <h5 class="text-dark">Pastas</h5>
+            </div>
+            <div style="float:left;">                 
+                <button class="btn btn-sm-1 btn-outline-info bg-light 
+                  outer-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) Serviso de Saúde" type="button">
+                  <span class="material-icons-sharp">medical_services</span>
+                </button> <h5 class="text-dark">MED</h5>
+            </div>
+            <div style="float:left;">                  
+                <button class="btn btn-sm-1 btn-outline-info bg-light 
+                  outer-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) Formulário dos funcionários" type="button">
+                  <span class="material-icons-sharp">badge</span>
+                </button> <h5 class="text-dark">Formulário</h5>
+            </div>
+            <div style="float:left;">                 
+                <button class="btn btn-sm-1 btn-outline-info bg-light
+                  outer-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) Perguntas frequentes" type="button">
+                  <span class="material-icons-sharp">question_mark</span>
+                </button> <h5 class="text-dark">FAQ</h5>
+            </div>
+            <div style="float:left;">                 
+                <button class="btn btn-sm-1 btn-outline-info bg-light 
+                  outer-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) Cursos & Formações" type="button">
+                  <span class="material-icons-sharp">school</span>
+                </button> <h5 class="text-dark">Education</h5>
+            </div>
+            <div style="float:left;">                 
+                <button class="btn btn-sm-1 btn-outline-info bg-light 
+                  outer-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) Fotos & Lembranças" type="button">
+                  <span class="material-icons-sharp">wallpaper</span>
+                </button> <h5 class="text-dark">Photo</h5>
+            </div>
+            <div style="float:left;">                  
+              <button class="btn btn-sm-1 btn-outline-info bg-light er-circle" 
+                data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) Telefone da Secretaria" type="button">
+                <span class="material-icons-sharp">local_phone</span>
+              </button> <h5 class="text-dark">Fone</h5>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    
+    <!--BARRA DE INÍCIO - LOGIN & CADASTRO + FLEXBOX -->
+    <ul class="nav justify-content-end" 
+      style="background-color:rgb(13, 202, 240); height: 40px;">
+      <li type="button" class="nav-item btn-primary" data-bs-toggle="modal" 
+        data-bs-target="#text_001">
+        <a class="nav-link text-white" data-bs-toggle="tooltip"
+          data-bs-placement="top" title="(BOTÃO) Entrar na sua conta"
+          href="#"><h4><b>Login</b></h4>
+        </a>
+      </li>
+      <li type="button" class="nav-item btn-primary" data-bs-toggle="modal" 
+        data-bs-target="#text_002">
+        <a class="nav-link text-white" data-bs-toggle="tooltip"
+          data-bs-placement="top" title="(BOTÃO) Criar uma conta"
+          href="#"><h4><b>Cadastro</b></h4>
+        </a>
+      </li>
+    </ul>
+
+    <!-- MODAL LOGIN -->
+    <div class="modal fade" id="text_001" data-bs-backdrop="static"
+      data-bs-keyboard="false" tabindex="-1" aria-labelledby="text_001Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content modal_color">
+          <img src="./imgs/clouds.png" class="clouds">
+          <div class="modal-header">
+            <h5 class="modal-title" id="text_001Label">
+              LOGIN
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"  
+              aria-label="Close">
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleDropdownFormEmail1"class="form-label">
+                <b>Endereço de email</b>
+              </label>
+              <input type="text" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleDropdownFormPassword1" class="form-label">
+                <b>Senha</b>
+              </label>
+              <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Senha">
+            </div>
+            <div class="mb-3">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                <label class="form-check-label" for="dropdownCheck">
+                  <b>Lembre de mim</b>
+                </label>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-light text-primary">Entrar</button>
+              <button class="btn btn-light text-danger" href="#">Esqueceu a senha?</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL CADASTRO -->
+    <div class="modal fade" id="text_002" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="text_002Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content modal_color">
+          <img src="./imgs/clouds.png" class="clouds">
+          <div class="modal-header">
+            <h5 class="modal-title" id="text_002Label">CADASTRO</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleDropdownFormEmail1" class="form-label"><b>Endereço de email</b></label>
+              <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleDropdownFormPassword1" class="form-label"><b>Senha</b></label>
+              <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Senha">
+            </div>
+            <div class="mb-3">
+              <label for="exampleDropdownFormPassword1" class="form-label"><b>Confirme sua Senha</b></label>
+              <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Confirme sua Senha">
+            </div>
+              <div class="sexo_mf justify-content-space-around"><b>Sexo:</b>
+                <ul>
+                  <li class="list-inline-item list_01">
+                    <label class="form-check-label" for="firstRadio">Masculino</label>
+                    <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio">
+                  </li>
+                  <li class="list-inline-item list_02">
+                    <label class="form-check-label" for="secondRadio">Feminino</label>
+                    <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
+                  </li>
+                  <li class="list-inline-item list_03">
+                    <label class="form-check-label" for="thirdRadio">Outros</label>
+                    <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-light">Cadastrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LOGO IMG INÍCIO -->
+    <div>
+      <img id="imgheader" src="imgs/petroimg.png">
+    </div>
+    
+    <!-- ========= CARROSSEL ========= -->
+    <div id="carouselExampleIndicators" class="carousel slide navbar" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <!-- ========= CARROSSEL IMG's ========= -->
+      <div class="carousel-inner fixed-right" >
+        <div class="carousel-item active" style="width: 40rem;"><!-- Tamanho img -->
+          <img src="imgs/carrossel02.png" height="342" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item" style="width: 40rem;">
+          <img src="imgs/carrossel03.png" height="342" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item" style="width: 40rem;">
+          <img src="imgs/petroimg.png" height="342" class=" w-100" alt="">
+        </div>
+      </div>
+    </div>
+  </head> 
+      
+  <!-- ========= CORPO DO TEXTO =========  -->
+  <body class="d-flex flex-column h-100">  
+    <header>
+
+      <!-- ========= FORNT-NAV 01 + FLEXBOX =========  -->
+      <div class="p-1 bd-example-position-utils">
+      <div class="front-nav">
+        <div class="btn-info bg-white">
+          <form class="container-fluid">
+            <button class="btn outline-dark bg-light" data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) início é o que vem em primeiro lugar (num processo); princípio, começo." type="button">
+              <span class="material-icons-sharp wids">widgets  </span> HOME
+            </button>
+            <button class="btn outline-dark bg-light" data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) Corporação é a associação ou organismo social que reúne os membros de uma mesma  profissão." type="button">
+              <span class="material-icons-sharp wids">widgets  </span> CORPORATE
+            </button>
+            <button class="btn outline-dark bg-light" data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) K + R = KR ('-')z" type="button">
+              <span class="material-icons-sharp wids">widgets  </span> KR
+            </button>
+            <button class="btn outline-dark bg-light" data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) O Departamento é responsável pela coordenação de cada um dos cursos de formação profissional na universidade." type="button">
+              <span class="material-icons-sharp wids">widgets  </span> DEPARTAMENTS
+            </button>
+            <button class="btn outline-dark bg-light" data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) Tooltip on top" type="button">
+              <span class="material-icons-sharp wids">widgets  </span> SUBSCINTES
+            </button>
+            <button class="btn outline-dark bg-light" data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) Tooltip on top" type="button">
+              <span class="material-icons-sharp wids">widgets  </span> K.V
+            </button>
+            <button class="btn outline-dark bg-light" data-bs-toggle="tooltip" data-bs-placement="top" title="  (BOTÃO) Comunicar é a ação de transmitir uma mensagem e, eventualmente, receber outra mensagem como resposta." type="button">
+              <span class="material-icons-sharp wids">widgets  </span> COMMUNITY 
+            </button>
+          </form>
+        </div>
+      </div> 
+      </div>
+      <!-- ========= COLLAPSE NAV 02 =========  -->
+    
+      <div class="collapse01  p-4"> 
+        <div class="row col">
+          <div class="col">
+            <div class="multi-collapse" id="multiCollapseExample1">
+              <div class="card-body">
+                <div class="bg-info borda"> <!-- === COR DO CARD NAV 02 === -->
+                  <br class="container-fixed">
+                  <div class="margin_just navbar"> <!-- MARGIN ICONE NAV2 --> 
+                    <div style="float:left;">
+                      <button class="btn btn-sm-1 btn-outline-info bg-light outer-circle"
+                      data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) Modelo de objetos" type="button">
+                        <span class="material-icons-sharp icone_mod">inventory_2</span>
+                      </button> <h5 class="text-light">Template</h5>
+                    </div>
+                    <div style="float:left;">                 
+                      <button class="btn btn-sm-1 btn-outline-info bg-light outer-circle"
+                      data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) Forum de conversas" type="button">
+                        <span class="material-icons-sharp">forum</span>
+                      </button> <h5 class="text-light">Question</h5>
+                    </div>
+                    <div style="float:left;">                
+                      <button class="btn btn-sm-1 btn-outline-info bg-light outer-circle"
+                      data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) Meus favoritos" type="button">
+                        <span class="material-icons-sharp">person_add_alt_1</span>
+                      </button> <h5 class="text-light">Favorite</h5>
+                    </div>
+                    <div style="float:left;">                 
+                      <button class="btn btn-sm-1 btn-outline-info bg-light outer-circle"
+                      data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) Pastas" type="button">
+                        <span class="material-icons-sharp">content_paste</span>
+                      </button> <h5 class="text-light">Pastas</h5>
+                    </div>
+                    <div style="float:left;">                 
+                      <button class="btn btn-sm-1 btn-outline-info bg-light outer-circle" 
+                      data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) Serviso de Saúde" type="button">
+                        <span class="material-icons-sharp">medical_services</span>
+                      </button> <h5 class="text-light">MED</h5>
+                    </div>
+                    <div style="float:left;">                  
+                      <button class="btn btn-sm-1 btn-outline-info bg-light outer-circle" 
+                      data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) Formulário dos funcionários" type="button">
+                        <span class="material-icons-sharp">badge</span>
+                      </button> <h5 class="text-light">Formulário</h5>
+                    </div>
+                    <div style="float:left;">                 
+                      <button class="btn btn-sm-1 btn-outline-info bg-light outer-circle" 
+                      data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) Perguntas frequentes" type="button">
+                        <span class="material-icons-sharp">question_mark</span>
+                      </button> <h5 class="text-light">FAQ</h5>
+                    </div>
+                    <div style="float:left;">                 
+                      <button class="btn btn-sm-1 btn-outline-info bg-light outer-circle" 
+                      data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) Cursos & Formações" type="button">
+                        <span class="material-icons-sharp">school</span>
+                      </button> <h5 class="text-light">Education</h5>
+                    </div>
+                    <div style="float:left;">                 
+                      <button class="btn btn-sm-1 btn-outline-info bg-light outer-circle" 
+                      data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) Fotos & Lembranças" type="button">
+                        <span class="material-icons-sharp">wallpaper</span>
+                      </button> <h5 class="text-light">Photo</h5>
+                    </div>
+                    <div style="float:left;">                  
+                      <button class="btn btn-sm-1 btn-outline-info bg-light outer-circle" 
+                      data-bs-toggle="tooltip" data-bs-placement="top" title="(BOTÃO) Telefone da Secretaria" type="button">
+                        <span class="material-icons-sharp">local_phone</span>
+                      </button> <h5 class="text-light">Fone</h5>
+                    </div>
+                  </div> 
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- ===== Button collapse (CLICK-LINKS) ===== -->
+        <div data-bs-toggle="tooltip" data-bs-placement="top">
+          <div class="btn-outline-info bg-info collapsed text-light" 
+            data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">
+          </div>
+        </div>
+      </div>
+      
+      <!-- ========= CARDS HEADER ========= -->
+      <div class="container cardes_css">
+        <div class="card border-light outline-info sm-4 carde01" style="max-width:  63rem;">
+          <div class="card-header bg-info text_white">
+            <span class="material-icons-sharp">widgets </span> Header 
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Light card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card border-light outline-info sm-4 carde02" 
+        style="max-width: 30rem;">
+          <div class="card-header bg-dark text_white">
+            <span class="material-icons-sharp">widgets </span> Header 
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Light card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card border-light btn-outline-info sm-8 carde03" 
+        style="max-width: 63rem;">
+          <div class="card-header bg-info text_white">
+            <span class="material-icons-sharp">widgets </span> Header 
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Light card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card border-light btn-outline-info sm-6 carde04" 
+        style="max-width: 30rem;">
+          <div class="card-header bg-dark text_white">
+            <span class="material-icons-sharp"> widgets </span> Header 
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Light card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========= FOOTER - (RODAPÉ) =========  -->
+    <footer class="rodape text-white bg-dark">
+      <div class="container">
+        <div class="row justify-content-md-center text-center">
+          <p>Nacional Comunity Ka3MyHaNta3 23C. 2012</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,209 @@
+/* -- LOGO IMG INÍCIO -- */
+#imgheader{
+    width: 100%;
+    height: 350px;
+    position: absolute;
+}
+
+/* -- LOGO IMG INÍCIO -- */
+#imgheader{
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    z-index: 0;
+    float: left;
+    padding: 0px 620px 0px 0px;
+}
+
+/* -- TELA DE LOGIN  -- */
+.modal_color {
+    position: relative;
+    background: linear-gradient(#87CEEB, #E0F6FF);
+}
+
+/* -- TAMANHO DA IMG DA TELA DE LOGIN -- */
+.clouds {
+    position: absolute;
+    width: 500px;
+    animation: clouds-animation 20s infinite linear;
+    top: 40px;
+}
+
+/* -- ANIMAÇÃO DA IMG DA TELA DE LOGIN -- */
+@keyframes clouds-animation {
+    from {
+        right: -550px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+/* -- LOGO IMG INÍCIO - RESPONSIVO -- */
+@media screen and (max-width: 1905px) {
+    #imgheader {
+        padding: 0px 0px 0px 0px;
+        height:300px;
+        width: 100%;
+    }
+}
+
+/*-- ========= CARROSSEL - TELA CHEIA LARGURA 1906px ========= -- */
+#carouselExampleIndicators{
+    top: 320px;
+    margin-left: 67.28%;
+    margin-top: -16.85%;
+}
+
+/*-- ========= ESCONDE CARROSSEL ========= -- */
+@media screen and (max-width: 1905px) {
+    #carouselExampleIndicators {
+        display: none;
+    }
+}
+
+/* -- INSPECIONADOR GOOGLE ALTURA DA BARRA NEXT CAROUSEL -- */
+.carousel-indicators {
+    bottom: 2rem !important;
+}
+
+/* -- INSPECIONADOR GOOGLE CAROUSEL BUTÃO NEXT -- */
+.carousel-indicators [data-bs-target] {
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: rgba(255, 255, 255, 0.664);
+    opacity: -0.5px;
+}
+
+/* -- INSPECIONADOR GOOGLE -- */
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    width: 80%;
+}
+
+/*-- ========= FRONT-NAV  ========= --*/
+.front-nav {
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+    margin-top: 15%;
+    padding: 0 19px 0 19px;
+    margin-bottom: -25px;
+}
+
+/*-- ===== ESCONDE FRONT-NAV  ===== --*/
+@media screen and (max-width: 1472px) {
+    .front-nav {
+        display: none;
+    }
+}
+
+/*-- ====== GOOGLE INSPECIONAR ====== --*/
+.btn {
+    /* -- ! Importante ReSoLvEr! btn está -- */
+    --bs-btn-padding-x: 3.20rem;
+   /* --bs-btn-padding-y: 0.275rem;*/
+    --bs-btn-font-size: 1.0rem;
+    /*--bs-btn-font-weight: 400;*/
+    --bs-btn-line-height: 2.0;
+    --bs-btn-bg: transparent;
+    /* --bs-btn-border-width: 1px; */
+    --bs-btn-border-color: transparent;
+}
+
+/*-- ========= COLLAPSE BUTTON ========= --*/
+.collapse01 {
+    /* width: 100%; */
+    text-align: center !important;
+    padding: 0 20px 0 20px;
+    z-index: 2;
+}
+
+/*-- ====== COLLAPSE - Para esconder o collapse ====== --*/
+@media screen and (max-width: 1472px) {
+    .collapse01 {
+        display: none;
+    }
+}
+
+/*-- ====== COLLAPSE RESPONSIVE - Botão Click-links ====== --*/
+@media screen and (min-width: 1473px) {
+    .button_offcancas {
+        display: none;
+        text-align: left !important;
+        float: left !important;
+    }
+}
+
+/*-- ========= COR DOS ÍCONES ========= --*/
+.wids {
+    color: rgb(13, 202, 240); /*-- === Cor azul do ícone nav 01 === --*/
+}
+
+/*-- ========= ICONS CIRCLE BUTTON ========= --*/
+.outer-circle {
+    width: 7.7rem;
+        height: 7.7rem;
+        border-radius: 50%;
+}
+
+
+/*-- ========= ICONS CIRCLE - RESPONSIVOS ========= --*/
+@media screen and (max-width: 1472px) {
+    .outer-circle {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+    }
+}
+
+/*-- ====== ESPAÇAMENTO DOS ÍCONES ====== --*/
+.margin_just {
+    margin: -1rem 0 -1rem 0; /*-- == ICONS CIRCLE BUTTON BLUE ==  --*/
+    justify-content: space-around;
+}
+
+/*-- ========= CARDS HEADER 1-2-3-4 ========= --*/
+/*-- === Os Cards quebram na largura 1472 === --*/
+
+.cardes_css {
+    padding-top: 100px;
+}
+
+@media screen and (max-width: 1472px) {
+    .cardes_css {
+        padding-top: 400px;
+    }
+}
+
+.carde01 {
+    float: left;
+    padding-bottom: 10px;
+}
+
+.carde02 {
+    float: right;
+    margin-bottom: 10px;
+}
+.carde03 {
+    float: left;
+    margin-top: 22px;
+}
+
+.carde04 {
+    float: right;
+    margin-bottom: 22px;
+}
+
+.text_white {
+    width: 100%;
+    color: #fff;
+    padding: 0.1% 0 0 0.1%;
+}
+
+.rodape{
+    margin-top: 116px !important;
+}
